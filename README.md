@@ -26,10 +26,12 @@ To run the server run the command
 # Form Component
 
 this is an a form with the three inputs that stores the data on the local storage.
+"http://localhost:5173"
 
 # Table Component
 
-this component get the data from the local storage and do the delete row and the checkbox is used for stike through the row 
+this component get the data from the local storage and do the delete row and the checkbox is used for stike through the row ..
+if you want to open the page add '/Table' in the end of the link "http://localhost:5173/table"
 
 
     
