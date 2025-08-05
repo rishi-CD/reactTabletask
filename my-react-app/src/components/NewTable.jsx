@@ -15,11 +15,12 @@ function SportsList() {
   }, []);
 
   const handleCheckboxChange = (index) => {
-    setCheckedItems(prev => ({
-      ...prev,
-      [index]: !prev[index]
-    }));
-  };
+  setCheckedItems(prev => {
+    const updatedItems = [...prev];
+    updatedItems[index] = !updatedItems[index];
+    return updatedItems;
+  });
+};
   const handleDelete = (id) => {
   const newData = sportsData.filter(item => item.name !== id); 
   setSportsData(newData);
