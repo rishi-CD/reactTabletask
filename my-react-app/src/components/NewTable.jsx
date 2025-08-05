@@ -21,7 +21,7 @@ function SportsList() {
     }));
   };
   const handleDelete = (id) => {
-  const newData = sportsData.filter(item => item.name !== id); // Using 'name' as ID
+  const newData = sportsData.filter(item => item.name !== id); 
   setSportsData(newData);
   localStorage.setItem('sportsForm', JSON.stringify(newData));
 };
